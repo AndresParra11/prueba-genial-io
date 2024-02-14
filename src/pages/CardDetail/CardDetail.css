@@ -47,3 +47,26 @@
   margin-bottom: 15px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@media (max-width: 450px) {
+  .section {
+    width: 300px;
+    height: 300px;
+    padding: 40px 20px;
+  }
+  .section__title {
+    font-size: 16px;
+    line-break: 16px;
+    margin-bottom: 15px;
+  }
+  .section__value {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 6px;
+  }
+  .section__description {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 20px;
+  }
+}

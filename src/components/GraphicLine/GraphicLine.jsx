@@ -56,6 +56,8 @@ const Graphic = ({ info }) => {
               ticks: {
                 color: "black",
               },
+              min: 10000,
+              max: 16000,
             },
           },
           plugins: {

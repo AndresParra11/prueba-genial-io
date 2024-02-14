@@ -1,34 +1,34 @@
 [
   {
     "label": "Jan",
-    "revenue": 64854
+    "revenue": 12000
   },
   {
     "label": "Feb",
-    "revenue": 54628
+    "revenue": 13000
   },
   {
     "label": "Mar",
-    "revenue": 117238
+    "revenue": 11800
   },
   {
     "label": "Apr",
-    "revenue": 82830
+    "revenue": 11600
   },
   {
     "label": "May",
-    "revenue": 91208
+    "revenue": 11500
   },
   {
     "label": "Jun",
-    "revenue": 103609
+    "revenue": 11900
   },
   {
     "label": "Jul",
-    "revenue": 90974
+    "revenue": 12100
   },
   {
     "label": "Aug",
-    "revenue": 82919
+    "revenue": 15231.89
   }
 ]
