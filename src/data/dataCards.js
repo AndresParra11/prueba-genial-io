@@ -1,5 +1,6 @@
 import infoCard1 from "../data/infoCard1.json";
 import infoCard2 from "../data/infoCard2.json";
+import infoCard3 from "../data/infoCard3.json";
 
 const dataCards = [
   {
@@ -30,7 +31,12 @@ const dataCards = [
     id: "3",
     title: "Card 3",
     description: "Gráfico de minutos de ejercicio",
-    data: "Data 3",
+    data: {
+      title: "Exercise Minutes",
+      value: "",
+      description: "Your exercise minutes are ahead of where you normally are.",
+      info: infoCard3,
+    },
     img: "https://res.cloudinary.com/dlkvt6uph/image/upload/v1707856638/genial-io/grafico3_idrxtt.png",
   },
   {

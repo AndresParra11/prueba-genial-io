@@ -1,0 +1,37 @@
+[
+  {
+    "label": "Jan",
+    "minutes": 35,
+    "minutes2": 45
+  },
+  {
+    "label": "Feb",
+    "minutes": 25,
+    "minutes2": 35
+  },
+  {
+    "label": "Mar",
+    "minutes": 60,
+    "minutes2": 28
+  },
+  {
+    "label": "Apr",
+    "minutes": 40,
+    "minutes2": 33
+  },
+  {
+    "label": "May",
+    "minutes": 44,
+    "minutes2": 30
+  },
+  {
+    "label": "Jun",
+    "minutes": 38,
+    "minutes2": 32
+  },
+  {
+    "label": "Jul",
+    "minutes": 42,
+    "minutes2": 36
+  }
+]

@@ -26,6 +26,7 @@ const GraphicBar = ({ info }) => {
                 ],
                 borderRadius: 5,
                 hoverBackgroundColor: "#08979a",
+                
               },
             ],
           }}
