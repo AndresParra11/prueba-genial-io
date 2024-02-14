@@ -1,4 +1,5 @@
 import infoCard1 from "../data/infoCard1.json";
+import infoCard2 from "../data/infoCard2.json";
 
 const dataCards = [
   {
@@ -17,7 +18,12 @@ const dataCards = [
     id: "2",
     title: "Card 2",
     description: "Gráfico de subscripciones mensuales",
-    data: "Data 2",
+    data: {
+      title: "Subscriptions",
+      value: "+2350",
+      description: "+180.1% from last month",
+      info: infoCard2,
+    },
     img: "https://res.cloudinary.com/dlkvt6uph/image/upload/v1707856630/genial-io/grafico2_cm5l36.png",
   },
   {

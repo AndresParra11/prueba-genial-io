@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
 import { Chart as ChartJS, defaults } from "chart.js/auto";
-import { Bar, Doughnut, Line } from "react-chartjs-2";
+import { Line } from "react-chartjs-2";
 import "./GraphicLine.css";
 
 defaults.maintainAspectRatio = false;
 defaults.responsive = true;
 
-const Graphic = ({ info }) => {
+const GraphicLine = ({ info }) => {
   return (
     <div className="graphic">
       <Line
@@ -71,8 +71,8 @@ const Graphic = ({ info }) => {
   );
 };
 
-Graphic.propTypes = {
+GraphicLine.propTypes = {
   info: PropTypes.array.isRequired,
 };
 
-export default Graphic;
+export default GraphicLine;
