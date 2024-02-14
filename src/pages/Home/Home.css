@@ -1,0 +1,15 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 20px;
+  height: 65vh;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    height: 100%;
+  }
+}
