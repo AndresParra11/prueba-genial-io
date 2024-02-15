@@ -68,6 +68,9 @@
 }
 
 @media (max-width: 450px) {
+  .article {
+    height: 62vh;
+  }
   .section {
     width: 300px;
     height: 300px;
