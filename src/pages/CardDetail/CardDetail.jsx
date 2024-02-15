@@ -3,6 +3,7 @@ import dataCards from "../../data/dataCards";
 import GraphicLine from "../../components/GraphicLine/GraphicLine";
 import GraphicBar from "../../components/GraphicBar/GraphicBar";
 import GraphicMultiple from "../../components/GraphicMultiple/GraphicMultiple";
+import Payments from "../../components/Payments/Payments";
 import "./CardDetail.css";
 
 const CardDetail = () => {
@@ -12,13 +13,23 @@ const CardDetail = () => {
 
   return (
     <article className="article">
-      <section className="section">
+      <section className={id === "4" ? "section4" : "section"}>
         <div className="section__info">
-          <h1 className={id !== "3" ? "section__title" : "section__title3"}>
+          <h1
+            className={
+              id === "3" || id === "4" ? "section__title3" : "section__title"
+            }
+          >
             {data.title}
           </h1>
           <p className="section__value">{data.value}</p>
-          <p className="section__description">{data.description}</p>
+          <p
+            className={
+              id === "3" ? "section__description3" : "section__description"
+            }
+          >
+            {data.description}
+          </p>
         </div>
         {id === "1" ? (
           <GraphicLine info={data.info} />
@@ -26,6 +37,8 @@ const CardDetail = () => {
           <GraphicBar info={data.info} />
         ) : id === "3" ? (
           <GraphicMultiple info={data.info} />
+        ) : id === "4" ? (
+          <Payments info={data.info} />
         ) : null}
       </section>
     </article>

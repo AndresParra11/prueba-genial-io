@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import dataCards from "../../data/dataCards";
 import "./Header.css";
 
 const Header = () => {
   const location = useLocation();
   const [activeLink, setActiveLink] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const path = location.pathname;
@@ -13,10 +15,11 @@ const Header = () => {
 
   return (
     <header className="header">
-      <figure className="header__logo">
+      <figure className="header__logo" onClick={() => navigate("/")}>
         <img
           src="https://res.cloudinary.com/dlkvt6uph/image/upload/v1707849535/genial-io/logo_e2lyma.svg"
           alt="logo-genial-io"
+          onClick={() => navigate("/")}
         />
       </figure>
       <div className="header__links">
@@ -27,20 +30,18 @@ const Header = () => {
         >
           Inicio
         </Link>
-        <Link
-          className={`header__link ${activeLink === "/card/1" ? "active" : ""}`}
-          to="/card/1"
-          onClick={() => setActiveLink("/card/1")}
-        >
-          Card 1
-        </Link>
-        <Link
-          className={`header__link ${activeLink === "/card/2" ? "active" : ""}`}
-          to="/card/2"
-          onClick={() => setActiveLink("/card/2")}
-        >
-          Card 2
-        </Link>
+        {dataCards.map((card) => (
+          <Link
+            key={card.id}
+            className={`header__link ${
+              activeLink === `/card/${card.id}` ? "active" : ""
+            }`}
+            to={`/card/${card.id}`}
+            onClick={() => setActiveLink(`/card/${card.id}`)}
+          >
+            {card.title}
+          </Link>
+        ))}
       </div>
     </header>
   );

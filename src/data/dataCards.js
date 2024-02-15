@@ -43,7 +43,12 @@ const dataCards = [
     id: "4",
     title: "Card 4",
     description: "Tabla para administrar pagos",
-    data: "Data 4",
+    data: {
+      title: "Payments",
+      value: "",
+      description: "Manage your payments.",
+      info: infoCard3,
+    },
     img: "https://res.cloudinary.com/dlkvt6uph/image/upload/v1707856629/genial-io/grafico4_irdpfx.jpg",
   },
 ];
