@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, HashRouter as Route } from "react-router-dom";
 import Home from "../pages/Home/Home";
 import Layout from "../components/Layout/Layout";
 import CardDetail from "../pages/CardDetail/CardDetail";
@@ -8,7 +8,7 @@ const AppRouter = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Home />} />
+          <Route index element={<Home />} />
           <Route path="/card/:id" element={<CardDetail />} />
         </Route>
       </Routes>
