@@ -7,12 +7,9 @@ const AppRouter = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/prueba-genial-io.vercel.app" element={<Layout />}>
-          <Route path="/prueba-genial-io.vercel.app" element={<Home />} />
-          <Route
-            path="/prueba-genial-io.vercel.app/card/:id"
-            element={<CardDetail />}
-          />
+        <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/card/:id" element={<CardDetail />} />
         </Route>
       </Routes>
     </BrowserRouter>
